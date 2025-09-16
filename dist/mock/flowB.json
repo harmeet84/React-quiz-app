@@ -1,0 +1,100 @@
+{
+  "rounds": [
+    {
+      "roundId": "r1",
+      "title": "General Knowledge",
+      "items": [
+        {
+          "key": "b1",
+          "prompt": "Capital of France?",
+          "options": [
+            {
+              "id": "b1o1",
+              "text": "Paris",
+              "isCorrect": true
+            },
+            {
+              "id": "b1o2",
+              "text": "Lyon",
+              "isCorrect": false
+            },
+            {
+              "id": "b1o3",
+              "text": "Marseille",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "key": "b2",
+          "prompt": "Which is a JavaScript framework?",
+          "options": [
+            {
+              "id": "b2o1",
+              "text": "React",
+              "isCorrect": true
+            },
+            {
+              "id": "b2o2",
+              "text": "Laravel",
+              "isCorrect": false
+            },
+            {
+              "id": "b2o3",
+              "text": ".NET",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "roundId": "r2",
+      "title": "Science",
+      "items": [
+        {
+          "key": "b3",
+          "prompt": "H2O is the chemical formula for?",
+          "options": [
+            {
+              "id": "b3o1",
+              "text": "Water",
+              "isCorrect": true
+            },
+            {
+              "id": "b3o2",
+              "text": "Oxygen",
+              "isCorrect": false
+            },
+            {
+              "id": "b3o3",
+              "text": "Hydrogen",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "key": "b4",
+          "prompt": "Speed of light is approx?",
+          "options": [
+            {
+              "id": "b4o1",
+              "text": "300,000 km/s",
+              "isCorrect": true
+            },
+            {
+              "id": "b4o2",
+              "text": "3,000 km/s",
+              "isCorrect": false
+            },
+            {
+              "id": "b4o3",
+              "text": "30,000 km/s",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

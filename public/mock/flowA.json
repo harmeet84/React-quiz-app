@@ -1,0 +1,35 @@
+{
+  "quizId": "flowA",
+  "questions": [
+    {
+      "id": "a1",
+      "question": "2 + 2 = ?",
+      "choices": [
+        "3",
+        "4",
+        "5"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "a2",
+      "question": "Color of the sky on a clear day?",
+      "choices": [
+        "Blue",
+        "Green",
+        "Red"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "a3",
+      "question": "React is a ____?",
+      "choices": [
+        "Library",
+        "Language",
+        "Database"
+      ],
+      "answerIndex": 0
+    }
+  ]
+}
