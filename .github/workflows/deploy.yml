@@ -24,6 +24,12 @@ jobs:
         with:
           node-version: 18.16.1
           cache: 'npm'
+      
+      -Name: Disable SSL verification (insecure)
+        run: |
+          # npm config set strict-ssl false
+          npm config set registry npm config set registry "https://registry.npmjs.org/"
+
       - run: npm ci
       - run: npm run build
       # Optional but recommended for SPAs (lets BrowserRouter work on refresh):
