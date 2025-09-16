@@ -26,6 +26,19 @@ jobs:
           cache: 'npm'
           registry-url: 'https://registry.npmjs.org/'
       
+      - name: Generate fresh package-lock.json (public registry)
+        run: |
+          rm -f .npmrc || true
+          npm config set registry "https://registry.npmjs.org/"
+         
+          echo "Registry: $(npm config get registry)"
+          rm -f package-lock.json
+          npm install --package-lock-only
+          if grep -nE "stratmac|nero\.service\.group" package-lock.json; then
+            echo "ERROR: package-lock.json still points to the internal registry."
+            exit 1
+          fi
+
       - run: npm install --save-dev @types/react @types/react-dom @types/prop-types @types/babel__core @types/babel__generator @types/babel__template @types/babel__traverse @types/estree @types/use-sync-external-store
       - run: rm -rf node_modules package-lock.json
       - run: npm ci
