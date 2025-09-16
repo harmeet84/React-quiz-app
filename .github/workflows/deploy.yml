@@ -27,7 +27,7 @@ jobs:
       
       
       - run: npm config set registry "https://registry.npmjs.org/"
-
+      - run: npm install
       - run: npm ci
       - run: npm run build
       # Optional but recommended for SPAs (lets BrowserRouter work on refresh):
