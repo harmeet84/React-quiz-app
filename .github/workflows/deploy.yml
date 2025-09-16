@@ -25,7 +25,7 @@ jobs:
           node-version: 18.16.1
           cache: 'npm'
       
-      -Name: Disable SSL verification (insecure)
+      - name: Disable SSL verification (insecure)
         run: |
           # npm config set strict-ssl false
           npm config set registry npm config set registry "https://registry.npmjs.org/"
