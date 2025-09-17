@@ -39,7 +39,7 @@ jobs:
             exit 1
           fi
       - run: npm ci
-      - run: npm run build:dev
+      - run: npm run build
       # Optional but recommended for SPAs (lets BrowserRouter work on refresh):
       - run: cp dist/index.html dist/404.html
       - uses: actions/upload-pages-artifact@v3
